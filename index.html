@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Player shooting game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Main Div -->
+    <div class="main-div">
+        <h2 id="round-title">Round <span id="round">1</span> of 5</h2>
+        <h2 id="result">Player</h2>
+        <div class="container">
+            <div class="vs">
+                <label id="timer">3</label><br>
+                <button id="restart-btn">Restart</button><br>
+                <button id="start-btn">Start</button>
+            </div>
+
+            <!-- Player 1 Div-->
+            <div class="player-1-div player">
+                <h3>Player 1</h3>
+                <div class="avatar">
+                    <i class="fas fa-user-ninja"></i><br>
+                </div>
+                <h4>Won: <span id="p1-won-count">0</span></h4>
+                <div class="shoot-button">
+                    <button id="p1-shoot-btn">Shoot</button>
+                </div>
+                <label class="health">Health: <span id="p1-health">100</span></label>
+                <div class="outline">
+                    <div class="progress" id="p1-progress"></div>
+                </div>
+            </div>
+
+            <!-- Player 2 Div -->
+            <div class="player-2-div player">
+                <h3>Player 2</h3>
+                <div class="avatar">
+                    <i class="fas fa-user-astronaut"></i><br>
+                </div>
+                <h4>Won: <span id="p2-won-count">0</span></h4>
+                <div class="shoot-button">
+                    <button id="p2-shoot-btn">Shoot</button>
+                </div>
+                <label class="health">Health: <span id="p2-health">100</span></label>
+                <div class="outline">
+                    <div class="progress" id="p2-progress"></div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
